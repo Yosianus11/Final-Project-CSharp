@@ -3218,11 +3218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Final Project\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
+      "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
       "projectName": "PaymentsApi",
-      "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Final Project\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
+      "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
       "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Final Project\\PaymentsApi\\PaymentsApi\\obj\\",
+      "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

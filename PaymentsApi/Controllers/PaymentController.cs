@@ -25,8 +25,8 @@ namespace PaymentsApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetMovie()
         {
-            var Movie = await _context.Payments.ToListAsync();
-            return Ok(Movie);
+            var Payment = await _context.Payments.ToListAsync();
+            return new OkObjectResult(new { Success = "Success", Validation = true, Payment });
         }
 
         [HttpPost]
@@ -37,7 +37,8 @@ namespace PaymentsApi.Controllers
                 await _context.Payments.AddAsync(data);
                 await _context.SaveChangesAsync();
                 var existItem = await _context.Payments.FirstOrDefaultAsync(x => x.paymentDetailId == data.paymentDetailId);
-                return Ok(existItem);
+
+                return new OkObjectResult(new { Success = "Insert Success", Validation = true, existItem });
             }
 
             return new JsonResult("Something went wrong") { StatusCode = 500 };
@@ -52,7 +53,7 @@ namespace PaymentsApi.Controllers
             if (item == null)
                 return NotFound();
 
-            return Ok(item);
+            return new OkObjectResult(new { Success = $"Get data with id {item.paymentDetailId}", Validation = true, item });
         }
 
         [HttpPut("{id}")]
@@ -73,7 +74,7 @@ namespace PaymentsApi.Controllers
 
             await _context.SaveChangesAsync();
 
-            return Ok(existItem);
+            return new OkObjectResult(new { Success = $"Updated data with id {item.paymentDetailId}", Validation = true, item });
         }
 
         [HttpDelete("{id}")]
@@ -87,7 +88,7 @@ namespace PaymentsApi.Controllers
             _context.Payments.Remove(existItem);
             await _context.SaveChangesAsync();
 
-            return Ok(existItem);
+            return new OkObjectResult(new { Success = $"Delete data with id {existItem.paymentDetailId}", Validation = true, existItem });
         }
 
 

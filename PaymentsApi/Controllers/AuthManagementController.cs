@@ -64,7 +64,7 @@ namespace TodoAppSesi11.Controllers
                 if (isCreated.Succeeded)
                 {
                     var jwtToken = GenerateJwtToken(newUser);
-                    return Ok(jwtToken);
+                    return new OkObjectResult(new { Register = "Success, Please Login", Validation = true });
                 }
                 else
                 {
@@ -119,7 +119,8 @@ namespace TodoAppSesi11.Controllers
                 }
 
                 var jwtToken = GenerateJwtToken(existingUser);
-                return Ok(jwtToken);
+                return new OkObjectResult(new { Login = "Success", Validation = true, jwtToken });
+                
             }
 
             return BadRequest(new RegistrationResponse()
@@ -150,7 +151,7 @@ namespace TodoAppSesi11.Controllers
                         Success = false
                     });
                 }
-                return Ok(result);
+                return new OkObjectResult(new { RefreshToken = "Success", Validation = true, result});
             }
 
             return BadRequest(new RegistrationResponse()
