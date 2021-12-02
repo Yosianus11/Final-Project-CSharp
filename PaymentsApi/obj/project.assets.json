@@ -3218,19 +3218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
+      "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\paymentsapi\\PaymentsApi.csproj",
       "projectName": "PaymentsApi",
-      "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
+      "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\paymentsapi\\PaymentsApi.csproj",
       "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\PaymentsApi\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
-      "projectName": "PaymentsApi",
-      "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
-      "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\obj\\",
->>>>>>> 23a7b67f862cd9b2f4ca88ca94f37e571c444d5c
+      "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\paymentsapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

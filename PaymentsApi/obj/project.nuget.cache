@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "TBaGDTHUIRUWoMhwitiH5YIiXNm+Ul+r+fchrSUCt9p4cX6/Cu2hDSY+hp5XHwecjncTfBiGEpDla3sccXRYXQ==",
+  "dgSpecHash": "uPNc/pfrbin2XD2webYQV3AzGPtQfjs/1tNc+3oMKX8zO9LDoaJ+aYwAqVg10JP4PiEL9kKAWyaVVFca6XsQug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
-=======
-  "dgSpecHash": "/O2sXaWBSf72uFefg8NS/VcE9vyDO+VV2t60ZaWIpKKJlJRqGH2I6iJamh0mvJXQJDCkOovB4mcdOz5F1vjKQA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi14\\PaymentsApi\\PaymentsApi\\PaymentsApi.csproj",
->>>>>>> 23a7b67f862cd9b2f4ca88ca94f37e571c444d5c
+  "projectFilePath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Final_Project_Payment\\PaymentsApi\\paymentsapi\\PaymentsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yosia\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\yosia\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
