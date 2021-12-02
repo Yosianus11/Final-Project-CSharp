@@ -13,8 +13,6 @@ namespace PaymentsApi.Data
     {
         public virtual DbSet<PaymentData> Payments { get; set; }
         public virtual DbSet<RefreshToken> RefreshTokens { get; set; }
-
-
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
         {
 

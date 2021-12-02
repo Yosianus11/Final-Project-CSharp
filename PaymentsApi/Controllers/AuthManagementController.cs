@@ -163,6 +163,7 @@ namespace TodoAppSesi11.Controllers
                 Success = false
             });
         }
+
         [HttpGet("{username}")]
         public async Task<IActionResult> GetItem(string username)
         {
@@ -173,9 +174,6 @@ namespace TodoAppSesi11.Controllers
 
             return new OkObjectResult(new { Success = $"Get data by Usenername = {item.UserName}", Validation = true, item });
         }
-
-
-
         private async Task<AuthResult> GenerateJwtToken(IdentityUser user)
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
