@@ -242,7 +242,7 @@ namespace TodoAppSesi11.Controllers
                 {
                     return new AuthResult()
                     {
-                        Success = false,
+                        Success = true,
                         Errors = new List<string>()
                         {
                             "Token has not yet expired"
