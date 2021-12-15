@@ -151,6 +151,7 @@ namespace TodoAppSesi11.Controllers
                         Success = false
                     });
                 }
+                
                 return new OkObjectResult(new { RefreshToken = "Success", Validation = true, result});
             }
 
@@ -164,16 +165,17 @@ namespace TodoAppSesi11.Controllers
             });
         }
 
-        [HttpGet("{username}")]
-        public async Task<IActionResult> GetItem(string username)
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetItem(string email)
         {
-            var item = await _userManager.FindByNameAsync(username);
+            var item = await _userManager.FindByEmailAsync(email);
 
             if (item == null)
                 return NotFound();
 
-            return new OkObjectResult(new { Success = $"Get data by Usenername = {item.UserName}", Validation = true, item });
+            return new OkObjectResult(new { Success = $"Get data by Email = {item.Email}", Validation = true, item });
         }
+
         private async Task<AuthResult> GenerateJwtToken(IdentityUser user)
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
@@ -304,9 +306,10 @@ namespace TodoAppSesi11.Controllers
                 storedToken.IsUsed = true;
                 _apiDbContext.RefreshTokens.Update(storedToken);
                 await _apiDbContext.SaveChangesAsync();
-
                 var dbUser = await _userManager.FindByIdAsync(storedToken.UserId);
+                
                 return await GenerateJwtToken(dbUser);
+                
             }
             catch (Exception ex)
             {
